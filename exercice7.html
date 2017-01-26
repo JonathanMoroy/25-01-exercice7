@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="exercice7.css">
+  <meta charset="utf-8">
+  <title>Exercice7</title>
+</head>
+<body>
+  <form action="index.html" method="post">
+    <fieldset class="field1">
+      <legend class="legend1">Votre identité</legend>
+      <ol>
+        <li><label for="nom">Nom : </label><input type="text" name="nom" placeholder="Nom"></li>
+        <li><label for="prénom">Prénom : </label><input type="text" name="prénom" placeholder="Prénom"></li>
+        <li><label for="mail">Adresse mail : </label><input type="text" name="mail" placeholder="Adresse mail"></li>
+      </ol>
+    </fieldset>
+    <fieldset class="field2">
+      <legend class="legend2">Adresse de livraison</legend>
+      <ol>
+        <li><label for="adresse">Adresse : </label><textarea name="adresse" rows="6" cols="20"></textarea></li>
+        <li><label for="postal">Code postal : </label><input type="text" name="postal" placeholder="Code postal"></li>
+        <li><label for="ville">Ville : </label><input type="text" name="ville" placeholder="Ville"></li>
+      </ol>
+    </fieldset>
+    <fieldset class="field3">
+      <legend class="legend3">Imformation de réglement</legend>
+      <ol>
+        <li><p>Type de carte bancaire :</p></li>
+        <input type="radio" name="visa" value="visa">
+        <label for="visa">VISA</label><br>
+        <input type="radio" name="mastercard" value="mastercard">
+        <label for="mastercard">Mastercard</label>
+        <li><label for="cardnumber">Numéro de carte : </label><input type="text" name="cardnumber" placeholder="Numéro de carte "></li>
+        <li><label for="securitycode">Code de sécurité : </label><input type="text" name="securitycode" placeholder="Code de sécurité"></li>
+        <li><label for="titularyname">Nom du titulaire : </label><input type="text" name="titularyname" placeholder="Nom du titulaire"></li>
+      </ol>
+    </fieldset>
+    <input type="submit" name="buy" value="J'achète !">
+  </form>
+</body>
+</html>
